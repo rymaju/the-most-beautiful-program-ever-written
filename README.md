@@ -62,7 +62,7 @@ And thats it! Lets take a birds eye view and recap what these 3 lines accomplish
 
 Thats it! If my explanation was boring or unhelpful please do watch the [talk](https://www.youtube.com/watch?v=OyfBQmvr2Hc). You'll probably understand it from that. Also, if youre interested in more things like this I reccomend you read up on Programming Languages. I reccomend *Structure and Interpretation of Computer Programs*, or [*Programming and Programming Languages*](https://papl.cs.brown.edu/2019/) which is totally free and online (plus its co-authored by one of my favorite professors at Northeastern: Ben Lerner).
 
-Notes:
+### Notes:
 
 In the current form the empty environment is kind of left up to whoever called `eval-expr` first. In the talk its shown that you probably want to have it be some lambda with an error message. That way if the environment look up burnt through all possible bindings and gets to the empty environment it can error saying that no binding was found:
 
